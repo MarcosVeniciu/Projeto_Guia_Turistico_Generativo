@@ -10,8 +10,8 @@ Usar um modelo de IA generativa como o Lhama 2 para auxiliar viajantes na pesqui
 O modelo de IA utilizado será o LLaMA 2 da Meta, ele funcionaria como um chat.
 
 ## Dados
-Os dados serão ser coletados usando crawler, a partir de diversas fontes da internet, como:
-* Sites oficiais de turismo;
-* Blogs de viagem;
+Os dados serão ser coletados usando crawler e datasets do ministerio do turismo, como:
+* hoteis, parques aquaticos, restaurantes, acampamentos, locadora de veiculos, disponiveis no https://dados.turismo.gov.br/dataset/
+* O crawler pode ser usado para coleta de dados mais detalhados como preço dos hoteis no site do TripAdvisor
 
 Os dados seriam limitados a algumas cidades que tenham foco em turismo, e alguns tipos específicos de pontos turisticos para simplificar a coleta de dados.
