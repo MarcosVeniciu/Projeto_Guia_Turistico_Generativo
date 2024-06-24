@@ -24,6 +24,9 @@ Para cada hotel terá um documento.
 ### Conjunto de Treinamento
 Como a quantidade de hoteis coletados não é muito grande. 
 Para realizar o fine-tuning do modelo será usado um dataset sintético. Onde as perguntas e respostas serão geradas por um modelo de LLM o Llama 3, para que o modelo usado para responder as perguntas possa aprender que tipo de pergunta esperar e como responder.
+
+![Captura de tela de 2024-06-24 10-58-09](https://github.com/MarcosVeniciu/Projeto_Guia_Turistico_Generativo/assets/42542651/0b58ef69-b4eb-477f-81ea-2f66de821adb)
+
 Desse modo foi gerardo um dataset com 28397 perguntas.
 A perguntas usadas no dataset tem 3 categorias: 
 * Positive Responses: São as perguntas onde existe um contexto valido e o hotel possui o que o usuario esta buscando, como piscina, spar, etc.
@@ -146,3 +149,8 @@ Para isso na pergunta do usuario é usado um modelo para identificar o nome do h
 
 ## treinamento do Modelo
 O modelo foi treinado usando como base o tinyllama que é um modelo com 1B de parâmetros, ele foi treinado por um todal de 150 epocas, com um batch size de 64. e um total de 66.450 pasos.
+
+## Resultados
+![Captura de tela de 2024-06-24 10-04-56](https://github.com/MarcosVeniciu/Projeto_Guia_Turistico_Generativo/assets/42542651/31f71f8a-5bc0-4003-90ae-128ccb1db730)
+![Captura de tela de 2024-06-24 10-01-03](https://github.com/MarcosVeniciu/Projeto_Guia_Turistico_Generativo/assets/42542651/264d468f-de22-45e3-a02c-7b7f8e6ca008)
+
