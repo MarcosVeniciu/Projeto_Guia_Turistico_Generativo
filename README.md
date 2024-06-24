@@ -44,7 +44,7 @@ Ao considerar o contexto, pergunta e resposta, são 20008 perguntas unicas, mas 
 Para gerar as perguntas foi utilizado dois prompts:
 Um para gerar as perguntas em que a respota esta no ocntexto e um para as perguntas que a resposta não tem no contexto, mas o modelo deve gerar uma resposta apresentando os outros recursos disponiveis no hotel.
 
-prompt para as perguntas em que a respota esta no ocntexto
+##### prompt para as perguntas em que a respota esta no ocntexto
 prompt = """**Objective:** Generate a comprehensive list of questions and answers to assist tourists in choosing hotels, covering different cities and types of accommodation.
 
 **Rules:**
@@ -75,7 +75,7 @@ Example:
 
 
 
-prompt para as perguntas que a resposta não tem no contexto, mas o modelo deve gerar uma resposta apresentando os outros recursos disponiveis no hotel
+##### prompt para as perguntas que a resposta não tem no contexto, mas o modelo deve gerar uma resposta apresentando os outros recursos disponiveis no hotel
 prompt = """**Objective:** Generate a comprehensive list of questions and answers, covering different cities and types of accommodation. Questions should not have a direct answer in context. They should only be questions for which answers are not available in context and that require reasoning or go beyond the information provided, ensuring informative answers even when no direct answer is available.
 
 **Rules:**
