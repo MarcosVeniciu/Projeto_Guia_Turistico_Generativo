@@ -20,6 +20,6 @@ os.environ["HF_HOME"] = temp_dir
 
 
 
-hf_hub_download(repo_id=id, filename=arquivo, local_dir=local_dir)
+hf_hub_download(repo_id=id, filename=arquivo)
 
 print(f"File downloaded to: {local_dir}")
