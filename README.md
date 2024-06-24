@@ -130,12 +130,18 @@ Examples:
 
 #### Retrieval-Augmented Generation (RAG)
 Para a contrução do Retrieval-Augmented Generation (RAG), a apartir dos nomes dos hoteis encontrado na cidade de Cabo frio, foi realizada um busca na internet em sites de hoteis. Foram usados dois sitem como base de dados, o booking.com e o almosafer.com.
+
 Apos recuperar uma lista com os links das paginas,foi realizado o download das paginas html. as paginas foram convertidas para pdf e foi extraido o texto presente neles.
 Para melhorar a qulidade do texto, removendo palavras mau formatadas e simbolos aleatorios foi usado um modelo de sumariazação para extrair as informações mais relevantes dos texto.
+
 os textos estavam em varios idiomas, então todos foram traduzidos para o ingles, que é o idioma em que o modelo foi treinado.
+
 Então esses textos foram salvos em arquivos txt para serem lidos pelo RAG.
+
 Como todos os documentos são referenstes a hoteis e eles possuem muitas informações em comum, frequentemente o RAG retornava documentos referentes a hoteis diferenstes, justamente por terem muito em comum.
+
 Para resolver esse problema alem da busca por similaridade, foi aplicado um filtro, que selecionava apenas os documentos referente ao hotel buscado.
+
 Para isso na pergunta do usuario é usado um modelo para identificar o nome do hotel, que sera usado no filtro.
 
 ## treinamento do Modelo
